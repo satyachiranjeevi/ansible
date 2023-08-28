@@ -1,6 +1,19 @@
 - name: varibles in ansible
   hosts: mongodb
+
+  # this is play level variabls, map
+
+  vars:
+    EMPNAME: Satya Chiranjeevi Duvvu
+    AGE: 25
+    LOCATION: London
+
   tasks:
   - name: print hello world
     ansible.builtin.debug:
       msg: "helloo, this is from ANSIBLE"
+
+  # printing variables 
+  - name: print variable
+    ansible.builtin.debug:
+      msg: "hello my name is {{EMPNAME}}, and my age is {{AGE}}"
