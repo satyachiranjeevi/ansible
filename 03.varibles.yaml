@@ -16,4 +16,4 @@
   # printing variables 
   - name: print variable
     ansible.builtin.debug:
-      msg: "hello my name is {{EMPNAME}}, and my age is {{AGE}}"
+      msg: "hello my name is {{EMPNAME}}, and my age is {{AGE}} and i am from {{LOCATION}}"
