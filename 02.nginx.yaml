@@ -1,5 +1,6 @@
 #install and run nginx
 - name: Install and Run Nginx
+  become: yes # it will give root access
   hosts: mongodb
   tasks:
   - name: Install nginx
