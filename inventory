@@ -1,12 +1,2 @@
 [mongodb]
-roboshop-us-dev-db-mongodb-01.devopsbysatya.online
-
-[app:children]
-cart
-user
-shipping
-payment
-
-roboshop-us-dev-db-mysql-01.devopsbysatya.online
-roboshop-us-dev-db-mysql-02.devopsbysatya.online
-roboshop-us-dev-db-mysql-03.devopsbysatya.online
+mongodb.devopsbysatya.online
