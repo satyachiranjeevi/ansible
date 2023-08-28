@@ -1,0 +1,41 @@
+#list of persons
+
+- nme: satyachiranjeevi duvvu
+  dob: 01-01-2023
+
+  #this is map
+
+  address:
+    city: hyd
+    country: india
+    dno: 413
+
+  #this is list of addresses
+
+  addresses:
+  - type: perm
+    city: hyd
+    country: india
+  - type: current
+    city: lon
+    country: uk
+
+- nme: satya d
+  dob: 01-01-2023
+
+  #this is map
+
+  address:
+    city: hyd
+    country: india
+    dno: 413
+
+  #this is list of addresses
+
+  addresses:
+  - type: perm
+    city: hyd
+    country: india
+  - type: current
+    city: lon
+    country: uk
