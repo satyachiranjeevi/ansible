@@ -1,0 +1,16 @@
+- name: testing variable precedence
+  hosts: localhost
+  vars:
+    NAME: Satya
+  vars_files:
+  - variables.yaml
+  vars_prompt:
+  - name: NAME
+    prompt: Enter your name
+    private: false
+  tasks:
+  - name: var at task level
+    vars:
+      NAME: Satya Duvvu
+    ansible.builtin.debug:
+      msg: "my name is : {{NAME}}"
