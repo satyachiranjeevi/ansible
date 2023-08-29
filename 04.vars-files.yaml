@@ -1,0 +1,11 @@
+ name: varibles in ansible
+  hosts: localhost #managing the ansible server itself
+
+  # this is play level variabls, map
+
+  vars_files:
+  - variables.yaml
+  tasks:
+  - name: printing variables
+    ansible.builtin.debug:
+      msg: "I am {{NAME}} from {{LOCATION}} and my age is {{AGE}}."
