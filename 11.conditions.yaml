@@ -1,17 +1,10 @@
 - name: create user
   hosts: localhost
   tasks:
-  - name: check roboshop user exists or not
+  - name: check if roboshop user exists or not
     ansible.builtin.command: id roboshop
     register: output
-    ingore_errors: true
 
-  - name: print the command output
+  - name: print output
     ansible.builtin.debug:
-      msg: "output is: {{output}}"
-
-
-    # when you want to run linux commands directly 
-    #if the ansible module is not available
-    # WHEN THE USER DOESN'T EXIST, ANSIBLE IS GETTING FAILED AND COMING OUT
-    # IGNORE THE ERRORS
+      msg: "Output is : {{output}}
