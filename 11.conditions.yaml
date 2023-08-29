@@ -10,4 +10,8 @@
       msg: "Output is : {{output}}"
   - name: print exist status
     ansible.builtin.debug:
-      msg: "exit status {{output.stderr_lines}}"
+      msg: "exit status {{output.rc}}"
+  - name: create user roboshop
+    ansible.builtin.user:
+      name: roboshop
+    when: output.rc != 0
