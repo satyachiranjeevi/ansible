@@ -1,4 +1,4 @@
- name: varibles in ansible
+- name: varibles in ansible
   hosts: localhost #managing the ansible server itself
 
   # this is play level variabls, map
