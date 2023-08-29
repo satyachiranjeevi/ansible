@@ -1,2 +1,6 @@
 [mongodb]
 mongodb.devopsbysatya.online
+
+[mongodb:vars]
+MONGO_USERNAME=mongodbadmin
+MONGO_DB=categories
