@@ -12,6 +12,7 @@
     ansible.builtin.debug:
       msg: "exit status {{output.rc}}"
   - name: create user roboshop
+    become: yes # sudo acces to create user
     ansible.builtin.user:
       name: roboshop
     when: output.rc != 0
