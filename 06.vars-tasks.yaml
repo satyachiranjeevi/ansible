@@ -1,0 +1,17 @@
+- name: vars at task level
+  hosts: localhost
+
+  vars:
+  - empid: 7867
+    dept: Sales
+
+  tasks:
+  - name: inherit the play / parent level vars
+    ansible.builtin.debug:
+      msg: " playlevel vars : {{empid}} and {{dept}}."
+  - name: inherit the play level vars and overrite
+    vars:
+    - empid: 8888
+      dept: Finance
+    ansible.builtin.debug:
+      msg: "task level vars: {{empid}}, {{dept}}" 
