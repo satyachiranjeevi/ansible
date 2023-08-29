@@ -2,8 +2,8 @@
   hosts: localhost
   vars:
     NAME: Satya
-  vars_files:
-  - variables.yaml
+  # vars_files:
+  # - variables.yaml
   vars_prompt:
   - name: NAME
     prompt: Enter your name
