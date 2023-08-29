@@ -10,7 +10,11 @@
     private: false
   tasks:
   - name: var at task level
-    vars:
-      NAME: Satya Duvvu
     ansible.builtin.debug:
       msg: "my name is : {{NAME}}"
+
+
+
+      # 1st preference: from command line
+      # 2nd - task level
+      # 3rd - file
