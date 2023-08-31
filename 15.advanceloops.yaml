@@ -1,0 +1,13 @@
+--- # Start of the yaml
+- name: Advanced loops
+  hosts: mongodb
+  tasks:
+  - name: install packages
+    ansible.builtin.yum:
+      name: "{{item.name}}"
+      state: "{{item.state}}"
+    loop:
+    - {name: 'nginx', state: 'absent'}
+    - {name: 'postmap', state: 'installed'}
+
+... # End of the yaml

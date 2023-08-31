@@ -1,5 +1,5 @@
 - name: install packages
-  hosts: localhost
+  hosts: mongodb
   become: yes
 
   tasks:
@@ -9,4 +9,4 @@
       state: installed
     loop:
     - nginx
-    - postmap
+    #- postmap
