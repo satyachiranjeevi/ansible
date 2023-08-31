@@ -1,6 +1,6 @@
 --- # Loops example
 - name: loops example
-  hosts: localhosts
+  hosts: localhost
 
   tasks:
   - name: print the names
