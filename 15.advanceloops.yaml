@@ -1,6 +1,7 @@
 --- # Start of the yaml
 - name: Advanced loops
   hosts: mongodb
+  become: yes
   tasks:
   - name: install packages
     ansible.builtin.yum:
